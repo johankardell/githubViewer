@@ -7,7 +7,7 @@ var gulp = require('gulp'),
     es = require('event-stream'),
     bowerFiles = require('main-bower-files'),
     rimraf = require('rimraf'),
-    queue = require('streamqueue'),
+    Queue = require('streamqueue'),
     lazypipe = require('lazypipe'),
     stylish = require('jshint-stylish'),
     bower = require('./bower'),
@@ -88,7 +88,7 @@ gulp.task('vendors', function () {
   var files = bowerFiles();
   var vendorJs = fileTypeFilter(files, 'js');
   var vendorCss = fileTypeFilter(files, 'css');
-  var q = new queue({objectMode: true});
+  var q = new Queue({objectMode: true});
   if (vendorJs.length) {
     q.queue(gulp.src(vendorJs).pipe(dist('js', 'vendors')));
   }
@@ -210,7 +210,7 @@ gulp.task('karma-conf', ['templates'], function () {
  * Test files
  */
 function testFiles() {
-  return new queue({objectMode: true})
+  return new Queue({objectMode: true})
     .queue(gulp.src(fileTypeFilter(bowerFiles(), 'js')))
     .queue(gulp.src('./bower_components/angular-mocks/angular-mocks.js'))
     .queue(appFiles())
