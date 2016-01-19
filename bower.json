@@ -1,13 +1,13 @@
 {
-  "name": "ng-test",
+  "name": "ng-gettingStarted",
   "main": [
-    "/dist/ng-test.min.js",
-    "/dist/ng-test.min.css"
+    "/dist/ng-gettingStarted.min.js",
+    "/dist/ng-gettingStarted.min.css"
   ],
   "version": "0.1.0",
-  "description": "TODO",
+  "description": "ng-gettingStarted",
   "authors": [
-    "TODO"
+    "Johan Kardell based on Scott Allens samples"
   ],
   "ignore": [
     "**/.*",
