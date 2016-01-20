@@ -1,5 +1,6 @@
 (function (module) {
-    "use strict";
+    'use strict';
+
     var github = function ($http) {
 
         var getUser = function (username) {

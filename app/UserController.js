@@ -1,5 +1,5 @@
 (function (module) {
-    "use strict";
+    'use strict';
 
     var UserController = function ($scope, github, $routeParams, $log) {
 

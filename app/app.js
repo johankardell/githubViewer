@@ -1,7 +1,7 @@
 /* global angular */
 (function (module) {
-    "use strict";
-    
+    'use strict';
+
     module.config(function ($routeProvider) {
         $routeProvider
             .when("/main", {

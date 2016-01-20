@@ -1,5 +1,6 @@
 (function (module) {
-    "use strict";
+    'use strict';
+
     var MainController = function ($scope, $interval, $location, $log) {
 
         var decrementCountdown = function () {
